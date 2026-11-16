@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aishwarya Ajay | LCA &amp; Carbon Accounting</title>
+  <meta name="description" content="Aishwarya Ajay: Life Cycle Assessment &amp; Carbon Accounting for the Built Environment. Civil Engineering M.Sc. · Technical University of Munich.">
+
+  <!-- Sets the theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.className += " js";
+      try {
+        var t = localStorage.getItem("theme");
+        var dark = t ? t === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (dark) root.className += " dark";
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-row">
+    <a href="#top" class="brand" aria-label="Back to top">
+      <span class="logo">AA</span>
+      <span class="brand-name">Aishwarya Ajay</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch theme">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button id="menu-toggle" class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="nav-mobile" aria-label="Toggle menu">
+        <svg class="icon-open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="hero">
+    <div class="blueprint" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div>
+        <p class="pill"><span class="dot" aria-hidden="true"></span>Available from February 2027 for six months (flexible)</p>
+
+        <h1>Aishwarya Ajay</h1>
+        <p class="hero-title">Life Cycle Assessment &amp; Carbon Accounting for the Built Environment</p>
+        <p class="hero-role">Civil Engineering M.Sc. · Technical University of Munich</p>
+
+        <p class="hero-pitch">I measure the carbon footprint of buildings and find the design changes that cut it. In my school-renovation LCA, the proposed alternatives reduced modelled GWP by roughly 80%.</p>
+
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary">View LCA project</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+
+        <div class="stages">
+          <p class="label">Life-cycle stages assessed (EN 15978)</p>
+          <ul>
+            <li><span class="code">A1–A3</span><span class="stage-label">Product stage</span></li>
+            <li><span class="code">B4</span><span class="stage-label">Replacement</span></li>
+            <li><span class="code">B6</span><span class="stage-label">Operational energy</span></li>
+            <li><span class="code">C3–C4</span><span class="stage-label">Waste &amp; disposal</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GWP chart (hero) -->
+      <figure class="chart card" aria-label="Global warming potential fell from 1773 to 354 kg CO₂e/m² gross floor area, 50 years">
+        <figcaption><span class="label">Schlossbachschule Bonn</span><span class="label-sm">GWP</span></figcaption>
+        <div class="bars">
+          <div>
+            <div class="bar-head"><span>Base case</span><strong>1,773</strong></div>
+            <div class="track"><div class="bar bar-clay" style="width:100%"></div></div>
+          </div>
+          <div>
+            <div class="bar-head"><span>Optimised</span><strong>354</strong></div>
+            <div class="track"><div class="bar bar-accent" style="width:19.97%"></div></div>
+          </div>
+        </div>
+        <p class="chart-note">kg CO₂e/m² gross floor area, 50 years. Base case vs. optimised model. Roughly 80% lower modelled Global Warming Potential.</p>
+        <p class="chart-delta">−80% GWP</p>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section container">
+    <div class="reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2>Projects where the numbers drive the design decisions</h2>
+    </div>
+
+    <div class="section-body stack">
+
+      <!-- Featured project -->
+      <div class="reveal">
+        <article class="project featured">
+          <p class="eyebrow">Life Cycle Assessment · TU Munich · 2025</p>
+          <h3>LCA of the Schlossbachschule Bonn school renovation</h3>
+          <p class="muted lead">Team project. Full Life Cycle Assessment of a 3,249 m² school renovation, aligned with EN 15978, EN 15804+A2 and DGNB criteria.</p>
+          <p class="muted lead">Base-case and optimised models were built to find where the building's carbon comes from and which alternatives reduce it.</p>
+
+          <div class="project-grid project-grid-featured">
+            <div class="stack-lg">
+              <div class="dash-list">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Phases A1–A3, B4, B6, C3–C4; functional unit m² gross floor area over 50 years.</li>
+                  <li>Models built in OneClick LCA from a BIM (Revit) model, using the Ökobaudat database.</li>
+                  <li>Emissions and impact factors evaluated across life-cycle stages, building elements and resource types (Global Warming Potential, Abiotic Depletion Potential).</li>
+                </ul>
+              </div>
+              <div class="dash-list">
+                <h4>My contribution</h4>
+                <ul>
+                  <li>Built the base-case and optimised LCA models.</li>
+                  <li>Researched English-language standards and database documentation to define scope and methodology.</li>
+                  <li>Coordinated project information with architects and engineers across the BIM model.</li>
+                  <li>Co-authored the report (methodology, results, recommendations) and prepared summary tables and charts in Excel.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="stack-lg">
+              <div class="dash-list">
+                <h4>Outcome</h4>
+                <ul>
+                  <li>Identified the main contributors: operational energy, plastic membranes, resilient flooring and ready-mix concrete.</li>
+                  <li>Proposed alternatives that reduced GWP by roughly 80%, from 1,773 to 354 kg CO₂e/m².</li>
+                </ul>
+              </div>
+
+              <!-- GWP chart (compact) -->
+              <figure class="chart card" aria-label="Global warming potential fell from 1773 to 354 kg CO₂e/m² gross floor area, 50 years">
+                <figcaption><span class="label">Schlossbachschule Bonn</span><span class="label-sm">GWP</span></figcaption>
+                <div class="bars">
+                  <div>
+                    <div class="bar-head"><span>Base case</span><strong>1,773</strong></div>
+                    <div class="track"><div class="bar bar-clay" style="width:100%"></div></div>
+                  </div>
+                  <div>
+                    <div class="bar-head"><span>Optimised</span><strong>354</strong></div>
+                    <div class="track"><div class="bar bar-accent" style="width:19.97%"></div></div>
+                  </div>
+                </div>
+                <p class="chart-note">kg CO₂e/m² gross floor area, 50 years. Base case vs. optimised model.</p>
+                <p class="chart-delta">−80% GWP</p>
+              </figure>
+            </div>
+          </div>
+
+          <ul class="tags" aria-label="Tools and methods">
+            <li>OneClick LCA</li><li>Revit (BIM)</li><li>Ökobaudat</li><li>Excel</li><li>EN 15978</li><li>EN 15804+A2</li><li>DGNB</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="reveal">
+        <article class="project">
+          <p class="eyebrow">Climate Protection &amp; Adaptation · TU Munich · 2024</p>
+          <h3>Climate protection and adaptation for Neuperlach, Munich</h3>
+          <p class="muted lead">Chapter author in an 8-person multidisciplinary seminar paper on the sustainable redevelopment of Neuperlach.</p>
+          <p class="muted lead">Local climate risk was characterised from long-term data, then used to propose measures.</p>
+
+          <div class="project-grid project-grid-3">
+            <div class="dash-list">
+              <h4>Approach</h4>
+              <ul>
+                <li>Analysed temperature-trend data (1979–2023) and CO₂-concentration data to characterise local climate risk.</li>
+                <li>Proposed measures with quantified cooling and emissions-reduction benefits.</li>
+              </ul>
+            </div>
+            <div class="dash-list">
+              <h4>My contribution</h4>
+              <ul>
+                <li>Authored the Climate Protection and Climate Change Adaptation chapter.</li>
+                <li>Coordinated with an 8-person team, combining research and written contributions into one consistent paper.</li>
+              </ul>
+            </div>
+            <div class="dash-list">
+              <h4>Outcome</h4>
+              <ul>
+                <li>A climate-risk assessment and a set of adaptation and mitigation measures for the redevelopment area.</li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="tags" aria-label="Tools and methods">
+            <li>Climate data analysis</li><li>Research</li><li>Technical writing</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="reveal">
+        <article class="project">
+          <p class="eyebrow">Green Infrastructure · TU Munich · 2025</p>
+          <h3>Green infrastructure in Glasgow</h3>
+          <p class="muted lead">Chapter author in a multidisciplinary case study for the seminar “Case Studies of Sustainable Urban Developments and Infrastructure”.</p>
+          <p class="muted lead">Benchmark analysis of public data and literature on Glasgow's green space, canopy and heat resilience.</p>
+
+          <div class="project-grid project-grid-3">
+            <div class="dash-list">
+              <h4>Approach</h4>
+              <ul>
+                <li>Assessed Glasgow's green area ratio (32%) and accessibility.</li>
+                <li>Analysed tree-canopy trends (2013–2023) across 23 wards to identify priority areas for investment.</li>
+                <li>Evaluated pocket parks, green roofs and walls, and green corridors for urban heat and climate resilience.</li>
+              </ul>
+            </div>
+            <div class="dash-list">
+              <h4>My contribution</h4>
+              <ul>
+                <li>Authored the Green Infrastructure chapter, including the research and benchmark analysis.</li>
+              </ul>
+            </div>
+            <div class="dash-list">
+              <h4>Outcome</h4>
+              <ul>
+                <li>Priority areas for investment and an evaluation of interventions for urban heat and resilience.</li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="tags" aria-label="Tools and methods">
+            <li>Benchmark analysis</li><li>Public data</li><li>Literature research</li>
+          </ul>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section container">
+    <div class="reveal">
+      <p class="eyebrow">About</p>
+      <h2>Engineering background, sustainability focus</h2>
+    </div>
+
+    <div class="section-body about-grid">
+      <div class="reveal about-text">
+        <p>I am a Civil Engineering M.Sc. student at the Technical University of Munich, specialising in Energy-Efficient &amp; Sustainable Design and Building. My interest is corporate sustainability and climate protection, approached from the engineering side.</p>
+        <p>I have carried out carbon accounting and Life Cycle Assessment under European standards (EN 15978, EN 15804+A2, DGNB), using Global Warming Potential for product and corporate carbon footprints and the Ökobaudat emission factor database. I am currently building CSRD and ESG reporting knowledge through a dedicated course.</p>
+        <p>I research technical and regulatory sources, structure and analyse data in Excel and Python, and explain results to technical and non-technical readers. I am used to coordinating information across teams and disciplines.</p>
+      </div>
+      <div class="reveal">
+        <div class="card pad focus">
+          <h3 class="label">Focus areas</h3>
+          <ul>
+            <li>Life Cycle Assessment (EN 15978, EN 15804+A2, DGNB)</li>
+            <li>Carbon footprints with Global Warming Potential</li>
+            <li>CSRD and ESG reporting (coursework)</li>
+            <li>Python and Excel data analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section container">
+    <div class="reveal">
+      <p class="eyebrow">Experience</p>
+      <h2>Hands-on engineering and environmental assessment</h2>
+    </div>
+
+    <ol class="section-body timeline">
+      <li>
+        <span class="node" aria-hidden="true"></span>
+        <div class="reveal">
+          <div class="tl-head"><h3>Intern, Structural Engineer</h3><span class="mono-sm">Jun 2021 – Dec 2021</span></div>
+          <p class="org">TriaGrid Engineers &amp; Consultations, Kochi, India</p>
+          <ul class="tl-points">
+            <li>Designed a mixed-use building (G+3) in ETABS per IS 1893/875.</li>
+            <li>Interpreted geotechnical reports and produced structural drawings, schedules and technical documentation, coordinating design information across the team.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="node" aria-hidden="true"></span>
+        <div class="reveal">
+          <div class="tl-head"><h3>Intern</h3><span class="mono-sm">Jan 2019 – Jun 2019</span></div>
+          <p class="org">Centre for Environment and Development, Trivandrum, India</p>
+          <ul class="tl-points">
+            <li>Supported an environmental assessment of the Pampa River water basin: researched, mapped and analysed water-quality data with ArcGIS.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="node" aria-hidden="true"></span>
+        <div class="reveal">
+          <div class="tl-head"><h3>Construction Site Engineer Intern</h3><span class="mono-sm">2016</span></div>
+          <p class="org">Kerala Water Authority / Vestern Builders, India</p>
+          <ul class="tl-points">
+            <li>Supported design and construction of a pump house/water intake structure and a multi-storey RC residential building.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section container">
+    <div class="reveal">
+      <p class="eyebrow">Skills</p>
+      <h2>Tools and methods</h2>
+    </div>
+
+    <div class="section-body grid-2">
+      <div class="reveal">
+        <div class="card pad fill">
+          <h3 class="label accent">Sustainability &amp; LCA</h3>
+          <ul class="chips">
+            <li>Life Cycle Assessment</li><li>Carbon footprint (GWP)</li><li>EN 15978</li><li>EN 15804+A2</li><li>DGNB</li><li>OneClick LCA</li><li>eLCA</li><li>Ökobaudat</li><li>CSRD fundamentals (coursework)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="card pad fill">
+          <h3 class="label accent">Data &amp; Analysis</h3>
+          <ul class="chips">
+            <li>Excel (analysis &amp; visualisation)</li><li>Python</li><li>MATLAB</li><li>SQL</li><li>PowerPoint</li>
+          </ul>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="card pad fill">
+          <h3 class="label accent">Engineering Software</h3>
+          <ul class="chips">
+            <li>Revit</li><li>AutoCAD</li><li>ETABS</li><li>ANSYS</li><li>STAAD.Pro</li><li>Sofistik</li><li>ArcGIS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="card pad fill">
+          <h3 class="label accent">Languages</h3>
+          <ul class="chips">
+            <li>English C1 (fluent, professional)</li><li>German B1 (working towards B2)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section container">
+    <div class="reveal">
+      <p class="eyebrow">Education &amp; certifications</p>
+      <h2>Studying at TU Munich, with an exchange in Tallinn</h2>
+    </div>
+
+    <div class="section-body grid-2">
+      <div class="reveal">
+        <div class="card pad fill">
+          <p class="mono-sm">2023 – 2028</p>
+          <h3 class="card-title">M.Sc. Civil Engineering</h3>
+          <p class="org">Technical University of Munich, Germany</p>
+          <p class="card-text">Specialisations: Energy-Efficient &amp; Sustainable Design and Building; Computational Modelling &amp; Simulation (AI in Engineering); Real Estate Management. Grade: 2.1</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="card pad fill">
+          <p class="mono-sm">Sept 2026 – ongoing</p>
+          <h3 class="card-title">Circular Economy for Materials Processing</h3>
+          <p class="org">Tallinn University of Technology, Estonia</p>
+          <p class="card-text">Exchange semester.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="card pad fill">
+          <p class="mono-sm">2020 – 2022</p>
+          <h3 class="card-title">M.Tech, Computer-Aided Structural Engineering</h3>
+          <p class="org">APJ Abdul Kalam Technological University, India</p>
+          <p class="card-text">Grade: 1.6. Thesis on the analysis of a C-section with rivet-fastened RHFCB subjected to web crippling.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="card pad fill">
+          <p class="mono-sm">2015 – 2019</p>
+          <h3 class="card-title">B.Tech, Civil Engineering</h3>
+          <p class="org">APJ Abdul Kalam Technological University, India</p>
+          <p class="card-text">Project: spatial distribution mapping of water quality in the Pampa River before and after the Sabarimala pilgrimage season (8 sampling stations, Water Quality Index, ArcGIS).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2 extra-row">
+      <div class="reveal">
+        <div class="card pad fill card-accent">
+          <p class="label accent">Certification</p>
+          <h3 class="card-title">CSRD / ESG reporting course</h3>
+          <p class="org">Position Green Academy</p>
+          <p class="card-text">Certification course on CSRD and European sustainability reporting requirements. October 2026, ongoing.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="card pad fill">
+          <p class="label accent">Publication</p>
+          <h3 class="card-title card-title-sm">A critical review on the behaviour of C-section with rivet-fastened RHFCB with web openings subjected to web crippling</h3>
+          <p class="venue">AIP Conf. Proc. 2856, 040007 (2023)</p>
+          <a href="https://doi.org/10.1063/5.0165893" target="_blank" rel="noopener noreferrer" class="text-link">View on DOI ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section container">
+    <div class="reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Looking for a six-month internship from February 2027</h2>
+    </div>
+
+    <div class="section-body reveal">
+      <div class="card contact-card">
+        <p class="contact-text">I am interested in corporate sustainability, climate protection and carbon accounting roles. Available from February 2027 for six months (flexible).</p>
+        <div class="btn-row">
+          <a href="mailto:aishwarya.aishu2101@gmail.com" class="btn btn-primary">aishwarya.aishu2101@gmail.com</a>
+          <a href="https://www.linkedin.com/in/aishwarya-ajay-046400174" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn ↗</a>
+        </div>
+        <p class="muted small">Based in Munich, Germany.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>Aishwarya Ajay · Munich, Germany</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- jQuery (local copy, with CDN fallback) -->
+<script src="js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"><\/script>');</script>
+<script src="js/main.js"></script>
+</body>
+</html>
